@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Kiwi Maru', serif;
+    /* outline: 1px solid black;  */
+    border: border-box;
+    color: black;
+    scroll-behavior: smooth;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    width: 100%;
+    height: 10vh;
+    font-weight: 600;
+}
+#navbar::before{
+    content: " ";
+    position: absolute;
+    background-color: #C3E5C9;
+    height: 14.5vh;
+    width: 100%;
+    z-index: -1;
+}
+.right{
+    width: 90%;
+}
+.right ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 0px 0px 0px 18vw;
+}
+.right ul li{
+    text-align: center;
+}
+.right ul li a{
+   text-decoration: none;
+   padding: 2px 6px 4px 6px;
+   border-radius: 30px;
+}
+.right ul li a:hover{
+    background-color:  #4A8645;
+    color: white;
+    border-radius: 30px;
+ }
+.left{
+    padding: 0px 0px 15px 2.5vw;
+}
+.left img{
+    height: 10vh;
+    width: 16vw;
+}
+.right ul li img{
+    cursor: pointer;
+    height: 2.5vw;
+    width: 2.5vw;
+
+}
+.complete-box::before{
+    content: " ";
+    position: absolute;
+    background-color: #E3F4E5;
+    height: 437%;
+    width: 100%;
+    z-index: -1;
+}
+.complete-box{
+    height: 425vh;
+}
+
+/* search bar and heading */
+.text-search{
+    display: flex;
+    justify-content: space-between;
+}
+.text-search .blog-heading{
+    width: 30%;
+    padding: 30px 0px 0px 50px;
+}
+.text-search h1{
+    padding-bottom: 10px;
+}
+.text-search .searchbar{
+    display: flex;
+    width: 29vw;
+    height: 7vh;
+    background-color: #C3E5C9;
+    margin: 34px 30px 0px 0px;
+    border-radius: 30px;
+
+}
+.text-search .searchbar img{
+    padding: 7px 4px 2px 9px;
+    height: 4.5vh;
+    width: 2.4vw;
+}
+.search-blogs{
+   font-weight: 600;
+   outline: none;
+   width: 100%;
+   border-radius: 30px;
+   border: none;
+   background-color: #C3E5C9;
+}
+
+/* section blog boxes */
+.blog-boxes{
+    height: 330vh;
+}
+.box-row1{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 45vh;
+    padding-left: 40px;
+    gap: 50px;
+}
+.box-row1 .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    height: 39vh;
+    width: 45vh;
+}
+.box img{
+    padding-top: 10px;
+    height: 28vh;
+    width: 34vh;
+}
+.box a{
+    text-decoration: none;
+    padding-left: 10px;
+}
+.blog-boxes h1{
+    margin: 30px 0px 0px 50px;
+}
+.more img{
+    height: 8vh;
+    width: 4vw;
+}
+ /* footer with pic */
+ 
+ .end-pic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;  
+ }
+ .end-pic img{
+    height: 60vh;
+    width: 30vw;
+ }
