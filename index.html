@@ -23,7 +23,7 @@
           <li class="li"><a href="index.html">Home</a></li>
           <li class="li"><a href="blogpage.html">Blog</a></li>
           <li class="li"><a href="shop.html">Shop</a></li>
-          <li class="li"><a href="#">Login/Sign Up</a></li>
+          <li class="li"><a id="openDialog1" href="#">Login/Sign Up</a></li>
           <li class="li"><img src="images/Translate.png" alt="" /></li>
         </ul>
       </div>
@@ -191,5 +191,176 @@
       </div>
      </div>
    </footer>
+    <dialog id="authDialog1">
+       
+    <div class="container">
+     <div class="left1">
+         <h1>LOGIN</h1>
+         <h2>Welcome back, fellow user!
+             Fill these up to log in to your
+             account.</h2>
+         <form id="login">
+             <div class="form-groups">
+                 <label for="username">Username</label><br>
+                 <input type="text" id="name" name="name" required><br>
+             </div>
+             <div class="form-groups">
+                 <label for="password">Password</label><br>
+                 <input type="password" id="password" name="password" required><br>
+             </div>
+             <a id="password1" href="forgot password"> Forgot Password</a>
+             <br>
+         </form>
+         <button type="submit">Done</button>
+         <h2>New here? <a id="openDialog11" href="#">Sign up</a> and create your account</h2>
+     </div>
+     <div class="right2">
+         <div>
+             <h3>We missed you!</h3>
+         </div>
+         <div>
+             <img class="farmer" src="images/farmerbro.png" alt="">
+         </div>
+     </div>
+     <!-- <div class="right21"> -->
+     <img class="cross" id="closeDialog1" src="images/cross.png" alt="">
+     <!-- </div> -->
+
+     <!-- <button id="closeDialog1">Close</button> -->
+
+    </div>
+ 
+</dialog>
+<!-- SIGN UP FORM -->
+<dialog id="authDialog2">
+ <div class="container">
+     <div class="left1">
+         <h1>SIGN UP</h1>
+         <h2>Delve into the world of green
+             knowledge!</h2>
+         <form id="sign-up">
+             <div class="form-groups">
+                 <label for="email">Email ID</label><br>
+                 <input type="email" id="email" name="email" required><br>
+             </div>
+             <div class="form-groups">
+                 <label for="username">Username</label><br>
+                 <input type="text" id="name" name="name" required><br>
+             </div>
+             <div class="form-groups">
+                 <label for="password">Password:</label><br>
+                 <input type="password" id="password" name="password" required><br>
+             </div>
+         </form>
+         <button id="more" type="submit">Done</button>
+
+         <h2>Have an existing account? <a id="openDialog21" href="#">Login</a> here</h2>
+     </div>
+     <div class="right2">
+         <img class="namaste" src="images/namaste 1.png" alt="">
+     </div>
+
+     <!-- <button id="closeDialog2">Close</button> -->
+     <img class="cross" id="closeDialog2" src="images/cross.png" alt="">
+ </div>
+
+</dialog>
+<!-- Tell us more form -->
+<dialog id="authDialog3">
+<div class="container">
+ <div class="left1">
+
+     <h1>TELL US MORE ABOUT YOURSELF</h1>
+     <h2>Your current profession/job</h2>
+     <form id="tell-us">
+
+         <button type="submit">Farmer</button>
+         <button type="submit">Scientist</button>
+         <button type="submit">Agronomist</button>
+         <button type="submit">Agro student</button>
+         <button type="submit">Eco-researcher</button>
+         <button type="submit">Plant hobby</button>
+         <br>
+         <div class="form-groups">
+             <label for="dob">Date of Birth </label><br>
+             <input type="date" id="dob" name="dob" required><br>
+         </div>
+
+     </form>
+         <button id="more1" type="submit">Done</button>
+
+
+ </div>
+ <div class="right2">
+     <img class="professions" src="images/professions.png" alt="">
+ </div>
+
+</div>
+
+</dialog>
+
+<script>
+ // For login form
+ const openButton1 = document.getElementById('openDialog1');
+ const dialog1 = document.getElementById('authDialog1');
+ const closeButton1 = document.getElementById('closeDialog1');
+ const signInForm = document.getElementById('login');
+
+
+ openButton1.addEventListener('click', () => {
+     dialog1.showModal();
+ });
+
+ closeButton1.addEventListener('click', () => {
+     dialog1.close();
+ });
+
+ signInForm.addEventListener('submit', (event) => {
+     event.preventDefault();
+     // Handle sign-in logic here
+ });
+ // for sign up form
+ //  const openButton2 = document.getElementById('openDialog2');
+ const dialog2 = document.getElementById('authDialog2');
+ const closeButton2 = document.getElementById('closeDialog2');
+ const signUpForm = document.getElementById('sign-up');
+
+
+ //  openButton2.addEventListener('click', () => {
+ //      dialog2.showModal();
+ //  });
+ closeButton2.addEventListener('click', () => {
+     dialog2.close();
+ });
+ signUpForm.addEventListener('submit', (event) => {
+     event.preventDefault();
+     // Handle sign-in logic here
+ });
+ //eachother login and sign up form
+ const openSignupButton = document.getElementById('openDialog11');
+ const openLoginButton = document.getElementById('openDialog21');
+
+ openLoginButton.addEventListener('click', () => {
+     dialog1.showModal();
+     dialog2.close();
+ });
+ openSignupButton.addEventListener('click', () => {
+     dialog2.showModal();
+     dialog1.close();
+ });
+ //for tell us form
+ const openButton3 = document.getElementById('more');
+ const dialog3 = document.getElementById('authDialog3');
+ const closeButton3 = document.getElementById('more1');
+ openButton3.addEventListener('click', () => {
+     dialog3.showModal();
+     dialog2.close();
+ });
+ closeButton3.addEventListener('click', () => {
+     dialog3.close();
+    
+
+ });
+</script>
   </body>
 </html>
