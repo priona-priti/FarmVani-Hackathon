@@ -14,7 +14,7 @@
     width: 100%;
     height: 10vh;
     font-weight: 600;
-    position: sticky;
+    position: fixed;
     scroll-behavior: smooth;
     color: black;
 }
@@ -47,6 +47,7 @@
    color: black;
 }
 .right ul li a:hover{
+    padding: 6px 20px 6px 20px;
     background-color:  #4A8645;
     color: white;
     border-radius: 30px;
@@ -68,11 +69,12 @@
     content: " ";
     position: absolute;
     background-color:#E3F4E5;;
-    height: 250%;
+    height: 239%;
     width: 100%;
     z-index: -1;
 }
 #complete-page{
+    padding: 71px 0px 0px 0px;
     height: 230vh;
 }
 /* Shop heading and coin  */
@@ -166,7 +168,7 @@
     height: 20vh;
     width: 10vw;
 } */
-h1{
+.h1new{
     padding: 0px 0px 30px 30px;
 }
 .h2{
@@ -240,4 +242,136 @@ h1{
     width: 100%;
   }
 }
+/* footer page styling */
+footer::before{
+    content: " ";
+    position: absolute;
+    background-color:  #5c9e69;
+    height: 9%;
+    width: 100%;
+    z-index: -1;
+}
+footer h5 {
+    color: white;
+    font-size: 1.10rem;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9vh;
+}
+.footer img{
+    height: 3.5vh;
+    width: 2vw;
+    padding: 3px 3.5px 0px 0px;
+}
+/* login/tellus/sign-up page styling */
+dialog button {
+    margin-top: 23px;
+    background-color: #E3F4E5;
+    color:#669F77;
+    width: 129.875px;
+    height: 33.839px;
+    border-radius: 23.903px;
+    flex-shrink: 0;
+    border: 1px solid #669F77 ;
+    cursor: pointer;
+}
+#authDialog1 {
+ 
+    width: 50.38vw;
+    padding: 0px;
+    border: none;
+}
+
+dialog a {
+    color: white;
+}
+#password1 {
+    margin: 0px 0px 0px 105px;
+}
+dialog {
+    margin: 72px 100px 72px 350px;
+    background-color: #E3F4E5 ;
+}
+dialog .left1{
+    padding: 56px 23px 23px 23px;
+    width: 56%;
+    border-radius: 0px 39.77px 39.77px 0px;
+    background-color: #669F77 ;
+}
+dialog h1 {
+    color: white;
+    font-size: 2rem;
+}
+dialog h2 {
+    margin: 12px 0px 17px 0px;
+    color: white;
+    font-size: 1.05rem;
+}
+label {
+  color: white;
+}
+input {
+    margin:10px 0px 12px 0px;
+    border: none;
+    width: 15vw;
+    height: 29.962px;
+    flex-shrink: 0;
+    border-radius: 23.903px;
+background: #D9D9D9;
+}
+dialog .right2 {
+    padding: 23px 0px 0px 0px;
+}
+.cross{
+    padding: 9px ;
+    height: 23px;
+    width: 23px
+}
+.farmer {
+    padding: 0px 0px 30px 6px;
+    height: 45vh;
+    width: 22vw;
+}
+dialog h3 {
+    text-align: center;
+    margin: 23px 0px 45px 37px;
+    font-size: 2.5rem;
+}
+/* style for sign up pages */
+#authDialog2 {
+    width: 50.38vw;
+    /* display: flex;  */
+    flex-direction: row;
+    padding: 0px;
+    border: none;
+    }
+dialog .container {
+    display: flex;
+}
+.namaste {
+    margin: 65px 0px 125px 23px;
+    height: 48vh;
+    width: 21vw;
+}
+/* style for tell us more pages */
+#authDialog3 {
+    width: 50.38vw;
+     flex-direction: row;
+    padding: 0px;
+    border: none;
+    }
+    .professions {
+        margin: 65px 0px 125px 2px;
+    height: 48vh;
+    width: 25vw;
+    }
+    #dob {
+        width: 12vw;
+        margin: 10px 0px 0px 0px;
+        cursor: pointer;
+        padding: 0px 23px 0px 23px;
+    }
 
