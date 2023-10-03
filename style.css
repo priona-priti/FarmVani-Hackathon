@@ -107,6 +107,7 @@ z-index: -1;
     margin: 501px 0px 0px 0px;
 }
 .lowerimg2 {
+    z-index: -1;
     width: 100%;
     position: absolute;
     top: 73vh;
