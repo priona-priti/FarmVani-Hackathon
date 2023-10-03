@@ -137,8 +137,11 @@
     width: 34vh;
 }
 .box a{
+    font-weight: 500;
+    font-size: .8rem;
     text-decoration: none;
     padding-left: 10px;
+}
 }
 .blog-boxes h1{
     margin: 30px 0px 0px 50px;
