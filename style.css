@@ -97,7 +97,7 @@ z-index: -1;
 }
 #home {
     padding: 71px 0px 0px 0px;
-    height: 90vh;
+    height: 100vh;
 }
 /* home background design */
 
@@ -243,6 +243,9 @@ border: none;
     cursor: pointer;
 }
 /* sponsers section */
+h3{
+    font-size: 1.75rem;
+}
 #sponsers{
     margin-bottom: 33px;
     display: flex;

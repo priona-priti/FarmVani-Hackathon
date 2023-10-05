@@ -69,13 +69,13 @@
     content: " ";
     position: absolute;
     background-color:#E3F4E5;;
-    height: 239%;
+    height: 216%;
     width: 100%;
     z-index: -1;
 }
 #complete-page{
     padding: 71px 0px 0px 0px;
-    height: 230vh;
+    height: 216vh;
 }
 /* Shop heading and coin  */
 .shop-head-text{
@@ -169,6 +169,7 @@
   }
   
   .product-card {
+    z-index: -1;
     flex: 0 0 auto;
     width: 20vw;
     height: 70vh;
@@ -340,6 +341,9 @@
      width: 17vw;
   }
 /* footer page styling */
+footer {
+  margin: 10vw 0px 0px 0px;
+}
 footer::before{
     content: " ";
     position: absolute;
