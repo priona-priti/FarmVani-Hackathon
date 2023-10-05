@@ -162,6 +162,9 @@
     width: 30vw;
  }
 /* footer page styling */
+footer {
+    margin: 2vw 0px 0px 0px;
+}
 footer::before{
     content: " ";
     position: absolute;
