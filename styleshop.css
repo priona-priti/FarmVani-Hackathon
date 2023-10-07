@@ -318,6 +318,29 @@
     margin-bottom: 10px;
   }
 /* Vouchers */
+.boxvouch{
+  display: flex;
+  align-items: center;
+  border: 2px solid green;
+  width: 18vw;
+  height: 22vh;
+  border-radius: 30px;
+}
+.boxvouch p{
+  padding-left: 10px;
+}
+.boxvouch img{
+  height: 14vh;
+}
+.arrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow img{
+  width: 5vw;
+  height: 10vh;
+}
   .vouch{
         padding-left: 30px;
   }
@@ -342,7 +365,7 @@
   }
 /* footer page styling */
 footer {
-  margin: 10vw 0px 0px 0px;
+  margin: 18vw 0px 0px 0px;
 }
 footer::before{
     content: " ";
