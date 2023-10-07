@@ -10,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  
     <link
       href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&family=Merriweather:wght@300;400&family=PT+Serif&display=swap"
       rel="stylesheet"
@@ -54,7 +56,7 @@
         <img class="grass" src="images/grass.png" alt="" />
       </div>
       <div class="lowerimg2">
-        <div class="lowerimg21">
+        <div class="lowerimg21"  data-aos="fade-up" data-aos-delay="150">
           <img class="wheat-rice" src="images/wheat 1.png" alt="" />
           <img class="wheat-rice" src="images/wheat 2.png" alt="" />
           <img class="wheat" src="images/rice 2 1.png" alt="" />
@@ -69,7 +71,7 @@
 
     <section id="about-us">
       <div class="about">
-        <div>
+        <div data-aos="fade-right" data-aos-delay="150">
           <h1>ABOUT US</h1>
           <p>
             Behind every row of crops, plants and every carefully tended
@@ -80,7 +82,7 @@
           </p>
           <button class="learn-more">learn more</button>
         </div>
-        <div>
+        <div data-aos="fade-left" data-aos-delay="150">
           <img src="images/About us.png" alt="" />
         </div>
       </div>
@@ -385,6 +387,10 @@
     
 
  });
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
   </body>
 </html>

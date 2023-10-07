@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    border: border-box;
+    font-family: Kiwi Maru;
+    /* outline: 1px solid red; */
+}
+.container::before{
+    content: " ";
+    position: absolute;
+    background: #AEDAB5;
+    height: 255%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+.container{
+    height: 140vh;
+}
+.logo-text{
+    padding-left: 40px;
+    height: 22vh;  
+}
+.logo-text img{
+    height: 11vh;
+    width: 16vw;
+}
+.logo-text h4{
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+}
+
+/* Blog */
+.blog::before{
+    content: " ";
+    position: absolute;
+    background-color: #daf6df;
+    height: 114%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+.blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    padding: 50px 0px 50px 0px;
+}
+.blog-heading1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.7rem;
+    padding: 51px 0px 20px 0px;
+}
+.blog-heading1 h2{
+    color: rgb(1, 85, 1);
+}
+.blog-heading2{
+    font-size: 2rem;
+    margin-left: 30vw; 
+}
+.blog-heading2 h5{
+    color: black;
+}
+.blog-content{
+    width: 80vw;
+    padding: 20px 0px 30px 0px;
+}
+.blog-content h5{
+    padding: 10px 0px 10px 0px;
+}
+ /* Comment Section */
+.comment-section{
+    width: 60%;
+    padding: 46px 0px 20px 20px;
+}
+.comment-section h2 b{
+    padding: 10px 10px 10px 10px;
+}
+.user{
+    padding: 10px 0px 10px 0px;
+    display: flex;
+}
+.user img{
+    height: 6vh;
+    width: 3vw;
+}
+.username{
+    padding-left: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.comment p{
+    height: 6vh;
+}
+.like-dislike{
+    display: flex;
+    gap: 4vw;
+}
+.likes{
+    display: flex;
+}
+.like-dislike img{
+    height: 3.5vh;
+    width: 1.5vw;
+}
+.end-comment{
+    display: flex;
+    align-items: center;
+    padding: 25px 0px 0px 10px;
+}
+.end-comment h4{
+    padding-right: 10px;
+}
+.end-comment img{
+    height: 2vh;
+    width: 1vw;
+}
+/* End picture */
+.end-pic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.end-pic h3{
+    padding-bottom: 20px;
+}
+.end-pic img{
+    height: 60vh;
+    width: 30vw;
+}
